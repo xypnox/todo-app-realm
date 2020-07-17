@@ -1,13 +1,10 @@
 module Pages.Index exposing (Config, Model, Msg, app, configE, main)
 
 import Browser as B
-import Dict exposing (Dict)
 import Element as E
-import Element.Font as EF
 import Json.Decode as JD
 import Json.Encode as JE
 import Realm as R
-import Realm.Utils as RU exposing (edges)
 
 
 main =
@@ -42,14 +39,6 @@ type Msg
 todoView : Todo -> E.Element (R.Msg Msg)
 todoView t =
     E.el [] (E.text t.value)
-
-
-empty : Int -> E.Element (R.Msg Msg)
-empty width =
-    E.el []
-        (E.text
-            "No ToDos, yay!"
-        )
 
 
 view : Model -> E.Element (R.Msg Msg)
