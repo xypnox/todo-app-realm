@@ -1,15 +1,16 @@
 module Test exposing (main)
 
 import Json.Encode as JE
-import Pages.IndexTest as Index
 import Realm.Test as RT
 import Routes
 
 
 main =
-    RT.app { tests = tests, title = "Realm Starter App" }
+    RT.app { tests = [], title = "Realm Starter App" }
 
 
+
+{--
 tests : List RT.Test
 tests =
     let
@@ -32,3 +33,4 @@ index =
     [ RT.Navigate Index.fresh Routes.index
     , RT.Navigate Index.increment Routes.increment
     ]
+--}
