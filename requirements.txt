@@ -61,7 +61,7 @@ prompt-toolkit==3.0.3
     # via ipython
 ptyprocess==0.6.0
     # via pexpect
-pygments==2.5.2
+pygments==2.7.4
     # via
     #   -r requirements.in
     #   ipython
