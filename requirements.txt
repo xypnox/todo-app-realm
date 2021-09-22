@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-asgiref==3.2.3
+asgiref==3.4.1
     # via django
 aspy.yaml==1.3.0
     # via pre-commit
@@ -29,9 +29,9 @@ decorator==4.4.1
     #   traitlets
 dj-database-url==0.5.0
     # via -r requirements.in
-django-extensions==2.2.6
+django==3.1.13
     # via -r requirements.in
-django==3.0.14
+django-extensions==2.2.6
     # via -r requirements.in
 doit==0.32.0
     # via -r requirements.in
@@ -39,10 +39,10 @@ gsub==0.1.5
     # via -r requirements.in
 identify==1.4.10
     # via pre-commit
-ipython-genutils==0.2.0
-    # via traitlets
 ipython==7.12.0
     # via -r requirements.in
+ipython-genutils==0.2.0
+    # via traitlets
 jedi==0.16.0
     # via ipython
 nodeenv==1.3.4
